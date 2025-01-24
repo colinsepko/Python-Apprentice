@@ -38,6 +38,8 @@ window.withdraw() # Hide the window; we just want to see pop ups
 
 # Ask the user's age
 
+age = simpledialog.askinteger("yo", "age")
+
 # Use if statements to determine the age group
 # and create a message
 
@@ -45,7 +47,7 @@ window.withdraw() # Hide the window; we just want to see pop ups
 
 
 
-window.mainloop()  # Keeps the window open
+#window.mainloop()  # Keeps the window open
 
 
 # TODO: 

@@ -53,4 +53,7 @@ def ask_integer(prompt):
     # If the user's guess is too low, tell the user
     # If the user's guess is correct, tell the user and break out of the loop
 
+t = ask_integer("give me a number")
+
+print(t)
 

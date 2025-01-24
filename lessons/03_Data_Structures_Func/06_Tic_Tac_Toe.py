@@ -16,6 +16,8 @@ def check_row(l):
         The winner's token ( x or o ) if there is one, otherwise None
         """
 
+    print(l)
+
     return None
 
 def check_win(board):
@@ -26,6 +28,8 @@ def check_win(board):
     Returns:
         The winner's token ( x or o ) if there is one, otherwise None
     """
+    for i in board:
+        check_row(i)
 
     return None
 
@@ -92,6 +96,8 @@ class TicTacToe:
         self.message.value = f"It's your turn, {self.current_turn}"
 
         winner = self.win_func(self.board)
+
+        
 
         if winner:
             self.message.value = f"Player {winner} won!"
