@@ -41,6 +41,11 @@ window.withdraw() # Hide the window; we just want to see pop ups
 # Use if statements to determine the age group
 # and create a message
 
+message = ""
+
+if age == 0 or 1 or 2:
+    message = "you are a baby"
+
 # Show the message to the user
 
 

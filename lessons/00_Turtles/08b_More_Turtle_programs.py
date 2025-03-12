@@ -7,4 +7,7 @@ from the section "Change the Turtle Image"
 Then change the code so that the turtle has a different image ( look in the 'images'
 directory ) and moves to the corners of the screen in a square pattern. 
 """
+list = ["first", "second", "third"]
 
+for i in range(20):
+    print(list[i % 3])

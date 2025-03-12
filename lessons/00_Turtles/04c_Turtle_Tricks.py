@@ -21,6 +21,21 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 ... # Your code here
 
+
+def square(left_right):
+    if left_right:
+        for i in range(4):
+            tina.forward(100)
+            tina.left(90)
+    else:
+        for i in range(4):
+            tina.forward(100)
+            tina.right(90)
+
+square(True)
+
+square(False)
+
 turtle.exitonclick()                    # Close the window when we click on it
 
 

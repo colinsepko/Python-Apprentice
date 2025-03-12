@@ -36,6 +36,14 @@ app = App("Numbers Grid", layout="grid")
 
 # In the loop, calculate or increment the number
 
+for i in range(10):
+    for j in range(10):
+        number = j + (i*10)
+        if number % 5 == 0:
+            Text(app, text='🦡', grid=[j, i], color="black")
+        else:
+            Text(app, text=str(j + (i*10)), grid=[j, i], color="black")
+
 # Use % determing the display, using fizzbuzz rules
 
 # If you are displaying a number, calculate the sum of the digits and determine the color
